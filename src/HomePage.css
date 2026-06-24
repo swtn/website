@@ -211,6 +211,7 @@ body {
 
 .btn-secondary {
   border: 2px solid #cbd5e1;
+  background-color: white;
   color: #475569;
   text-decoration: none;
   padding: 14px 30px;
@@ -222,7 +223,7 @@ body {
 .btn-secondary:hover {
   border-color: #456D94;
   color: #456D94;
-  background-color: rgba(69, 109, 148, 0.02);
+  background-color: white;
 }
 /* --- Sekcja Grid 3x3 z usługami --- */
 .services-grid-section {
@@ -991,4 +992,36 @@ body {
     gap: 10px;
     text-align: center;
   }
+}
+
+/* Przycisk przejścia do pełnego katalogu sprzętu */
+.btn-hardware-catalog-link {
+  display: inline-block;
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.btn-hardware-catalog-link:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+  color: #ffffff;
+}
+
+/* Dostosowanie linku w navbarze, aby zachowywał styl tekstu */
+.nav-menu .nav-link-hardware {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-menu .nav-link-hardware:hover {
+  color: #3b82f6;
 }

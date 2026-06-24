@@ -1,0 +1,232 @@
+/* Reset i główne kontenery */
+.service-page-wrapper {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  background-color: #f8fafc;
+  overflow-x: hidden;
+}
+
+/* 1. SEKCJA HERO */
+.service-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 100px 20px 160px 20px;
+  text-align: center;
+}
+
+.service-hero-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.service-badge {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 20px 0;
+  letter-spacing: -0.5px;
+  line-height: 1.2;
+}
+
+.service-lead {
+  font-size: 1.2rem;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+/* 2. KARTY WYZWAŃ */
+.challenges-section {
+  max-width: 1200px;
+  margin: -80px auto 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.challenges-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.challenge-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 32px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.3s ease;
+}
+
+.challenge-card:hover {
+  transform: translateY(-5px);
+}
+
+.warning-icon {
+  font-size: 1.5rem;
+}
+
+.challenge-card h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 16px 0 12px 0;
+  color: #0f172a;
+}
+
+.challenge-card p {
+  color: #475569;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* 3. ZAKRES USŁUG (THE CORE) */
+.features-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.features-container {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.features-mini-badge {
+  color: #3b82f6;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.features-title-side h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 12px 0 20px 0;
+  line-height: 1.2;
+}
+
+.features-side-desc {
+  color: #64748b;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.features-list-side {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.feature-item {
+  display: flex;
+  gap: 24px;
+  align-items: start;
+}
+
+.feature-number {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #3b82f6;
+  opacity: 0.6;
+  line-height: 1;
+  padding-top: 4px;
+}
+
+.feature-text-block h3 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.feature-text-block p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* 4. SEKCJA FAQ */
+.faq-section {
+  background-color: #ffffff;
+  padding: 100px 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.faq-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-subtitle {
+  color: #3b82f6;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: #0f172a;
+  text-align: center;
+  margin: 12px 0 50px 0;
+}
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.faq-box {
+  background-color: #f8fafc;
+  padding: 28px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.faq-box h4 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.faq-box p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+/* RWD - Dostosowanie do urządzeń mobilnych */
+@media (max-width: 968px) {
+  .challenges-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .features-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .service-hero h1 {
+    font-size: 2.25rem;
+  }
+}

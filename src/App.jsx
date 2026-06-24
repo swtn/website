@@ -1,11 +1,19 @@
-import React from 'react';
-import HomePage from './HomePage.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './HomePage';
+import ServicePage from './ServicePage';
+import HardwarePage from './HardwarePage'; // 1. IMPORTUJEMY NOWĄ PODSTRONĘ
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
-    <>
-      <HomePage />
-    </>
+    <BrowserRouter>
+      <ScrollToTop /> 
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/oferta/:serviceId" element={<ServicePage />} />
+        <Route path="/sprzet" element={<HardwarePage />} /> {/* 2. REJESTRUJEMY ŚCIEŻKĘ */}
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,294 @@
+.hardware-page-wrapper {
+  font-family: 'Inter', sans-serif;
+  color: #0f172a;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* 1. HERO SECTION */
+.hardware-hero {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #ffffff;
+  padding: 120px 20px;
+  text-align: center;
+}
+
+.hardware-hero-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.hardware-badge {
+  background-color: rgba(59, 130, 246, 0.15);
+  color: #60a5fa;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hardware-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 24px 0;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.hardware-hero p {
+  font-size: 1.15rem;
+  color: #94a3b8;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hardware-hero-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.btn-hardware-primary {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.btn-hardware-primary:hover {
+  background-color: #2563eb;
+}
+
+.btn-hardware-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  padding: 14px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: background-color 0.2s ease;
+}
+
+.btn-hardware-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* 2. CATALOG SECTION (SPLIT) */
+.hardware-catalog-section {
+  max-width: 1200px;
+  margin: 100px auto;
+  padding: 0 20px;
+}
+
+.hardware-catalog-container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.hardware-sticky-visual {
+  position: sticky;
+  top: 120px;
+}
+
+.laptop-image-wrapper {
+  background-color: #f8fafc;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hardware-main-img {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 25px 25px rgba(0, 0, 0, 0.15));
+}
+
+.hardware-visual-note {
+  margin-top: 20px;
+  font-size: 0.85rem;
+  color: #64748b;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* PRAWA STRONA - SPECYFIKACJA */
+.section-mini-lead {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #3b82f6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: block;
+  margin-bottom: 24px;
+}
+
+.hardware-category-group {
+  margin-bottom: 48px;
+}
+
+.category-header-line {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 10px;
+}
+
+.category-accent-square {
+  width: 8px;
+  height: 24px;
+  background-color: #3b82f6;
+  border-radius: 2px;
+}
+
+.hardware-category-group h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.hardware-bullet-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hardware-bullet-list li {
+  display: flex;
+  gap: 12px;
+  align-items: start;
+}
+
+.bullet-checkmark {
+  color: #10b981;
+  font-weight: 700;
+}
+
+.bullet-text {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.5;
+}
+
+/* 3. PARTNERSHIP SECTION */
+.hardware-partnership-section {
+  background-color: #f8fafc;
+  padding: 100px 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.partnership-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.partnership-badge {
+  color: #3b82f6;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.partnership-text h2 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 12px 0 20px 0;
+}
+
+.partnership-text p {
+  color: #475569;
+  line-height: 1.6;
+  font-size: 1.05rem;
+  margin-bottom: 24px;
+}
+
+.partnership-features-mini {
+  display: flex;
+  gap: 24px;
+  color: #0f172a;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.partnership-features-mini strong {
+  color: #3b82f6;
+}
+
+/* CERTYFIKAT BOX (Zbieżny z grafiką) */
+.partnership-logo-block {
+  display: flex;
+  justify-content: center;
+}
+
+.qnap-certified-box {
+  background-color: #ffffff;
+  border: 4px solid #0f172a;
+  padding: 40px 50px;
+  text-align: center;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 15px 15px 0px #0f172a; /* Efekt trójwymiarowego odcięcia ze zdjęcia */
+}
+
+.qnap-brand-logo {
+  height: 45px;
+  margin-bottom: 12px;
+}
+
+.certificate-divider {
+  width: 100%;
+  height: 2px;
+  background-color: #0f172a;
+  margin: 16px 0;
+}
+
+.cert-text-top {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #1e3a8a;
+  text-transform: capitalize;
+  letter-spacing: -0.5px;
+  line-height: 1;
+}
+
+.cert-text-bottom {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #64748b;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+}
+
+/* RWD */
+@media (max-width: 968px) {
+  .hardware-catalog-container, .partnership-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .hardware-sticky-visual {
+    position: static;
+  }
+  .hardware-hero h1 {
+    font-size: 2.25rem;
+  }
+}
